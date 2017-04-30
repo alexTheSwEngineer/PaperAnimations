@@ -17,13 +17,13 @@ public class Slicer implements com.example.imgManipulation.interfaces.Slicer {
         ArrayList<Stripe> stripes=new ArrayList<Stripe>();
         int pictureWidth  = x.getWidth(null);
         int pictureHeight = x.getHeight(null);
-        for (int i = 0; i < pictureWidth; i+=(period*slidSize)) {
+        for (int i = offset*slidSize; i < pictureWidth; i+=(period*slidSize)) {
             SparseStripe stripe=new SparseStripe();
             for(int j = 0; j<pictureHeight; j++){
                 ArrayList<Pixel> pixels = new ArrayList<Pixel>();
                 for(int p=0;p<slidSize;p++){
                     int pixelWidthIndex = i+p;
-                    if(pixelWidthIndex>pictureWidth){
+                    if(pixelWidthIndex>=pictureWidth){
                         pixels.add(new Pixel(0));
                     }else{
                         pixels.add(new Pixel(x.getRGB(pixelWidthIndex,j)));
