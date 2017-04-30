@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * Created by atrposki on 29-Apr-17.
  */
-public interface Concatinator {
-    Image concat(List<Stripe> stripes);
+@FunctionalInterface
+public interface Interlacer {
+    List<Stripe> interlace(List<List<Stripe>> stripes);
 }
