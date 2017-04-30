@@ -1,6 +1,5 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
@@ -9,5 +8,5 @@ import java.util.List;
  */
 @FunctionalInterface
 public interface Slicer {
-    List<Stripe> split(BufferedImage img, int slicePeriod, int slidSizes);
+    List<Stripe> split(BufferedImage img, int slicePeriod, int slidSizes, int ofset);
 }

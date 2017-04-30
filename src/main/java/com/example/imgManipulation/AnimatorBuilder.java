@@ -1,5 +1,7 @@
 package com.example.imgManipulation;
 
+import com.example.imgManipulation.interfaces.*;
+
 import java.awt.image.BufferedImage;
 
 /**
@@ -52,7 +54,7 @@ public class AnimatorBuilder {
         }
 
         if(interlacer == null){
-            throw new IllegalStateException("Interlacer must be provided");
+            throw new IllegalStateException("SimpleInterlacer must be provided");
         }
 
         return new Animator(effects,interlacer,slicer,inputResizer,outputResixer,writer,bufferSupplier);

@@ -1,4 +1,4 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
 import java.awt.image.BufferedImage;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -8,5 +8,5 @@ import java.awt.image.BufferedImage;
  */
 @FunctionalInterface
 public interface CollorEffects {
-    BufferedImage toBiColor(Image image);
+    BufferedImage apply(BufferedImage image);
 }

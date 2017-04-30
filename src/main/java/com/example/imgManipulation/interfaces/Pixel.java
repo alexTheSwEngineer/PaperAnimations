@@ -1,4 +1,4 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
 /**
  * Created by atrposki on 29-Apr-17.

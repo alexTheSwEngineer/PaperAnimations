@@ -1,6 +1,6 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
-import java.lang.reflect.Array;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,5 +31,10 @@ public class SparseStripe implements Stripe {
     @Override
     public int width() {
         return width;
+    }
+
+    @Override
+    public BufferedImage toImg() {
+        return null;
     }
 }

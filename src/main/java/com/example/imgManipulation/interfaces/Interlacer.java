@@ -1,7 +1,5 @@
-package com.example.imgManipulation;
+package com.example.imgManipulation.interfaces;
 
-import java.awt.*;
-import java.util.*;
 import java.util.List;
 
 /**
