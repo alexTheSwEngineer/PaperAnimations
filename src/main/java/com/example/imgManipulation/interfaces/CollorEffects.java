@@ -8,5 +8,5 @@ import java.awt.image.BufferedImage;
  */
 @FunctionalInterface
 public interface CollorEffects {
-    BufferedImage apply(BufferedImage image);
+    Image apply(Image image);
 }

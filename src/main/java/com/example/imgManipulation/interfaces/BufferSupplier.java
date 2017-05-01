@@ -8,5 +8,5 @@ import java.util.List;
  */
 @FunctionalInterface
 public interface BufferSupplier {
-    BufferedImage create(List<Stripe> stripes);
+    Image create(List<Stripe> stripes);
 }

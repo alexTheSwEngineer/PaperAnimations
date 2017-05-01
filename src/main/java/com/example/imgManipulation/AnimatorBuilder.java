@@ -30,7 +30,7 @@ public class AnimatorBuilder {
 
     public Animator build(){
         if(effects==null){
-            effects = x->(BufferedImage)x;
+            effects = x->x;
         }
 
         if(inputResizer==null){

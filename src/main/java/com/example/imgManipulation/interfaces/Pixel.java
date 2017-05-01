@@ -9,7 +9,7 @@ public class Pixel {
     public Pixel(int i) {
         rgb=i;
     }
-    public int getRgb(){
+    public int getRGB(){
         return  rgb;
     }
 }

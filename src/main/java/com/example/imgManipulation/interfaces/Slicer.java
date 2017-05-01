@@ -8,5 +8,5 @@ import java.util.List;
  */
 @FunctionalInterface
 public interface Slicer {
-    List<Stripe> split(BufferedImage img, int slicePeriod, int slidSizes, int ofset);
+    List<Stripe> split(Image img, int slicePeriod, int slidSizes, int ofset);
 }

@@ -23,10 +23,7 @@ public class SimpleInterlacer implements com.example.imgManipulation.interfaces.
 
         for(int frameOfset=0;frameOfset<maxStripeCount;frameOfset++){
             for (List<Stripe> stripesPerSingleFrame : stripesPerPictures) {
-                if(frameOfset>=stripesPerSingleFrame.size()){
-                    Stripe lastNonEmptyStripe = stripesPerSingleFrame.get(stripesPerSingleFrame.size()-1);
-                    result.add(empty(lastNonEmptyStripe.width(),lastNonEmptyStripe.height(),lastNonEmptyStripe.getRow(0).get(0)));
-                }else {
+                if(frameOfset<stripesPerSingleFrame.size()){
                     result.add(stripesPerSingleFrame.get(frameOfset));
                 }
             }

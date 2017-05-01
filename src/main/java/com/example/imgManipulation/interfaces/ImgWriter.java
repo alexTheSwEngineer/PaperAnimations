@@ -8,5 +8,5 @@ import java.util.List;
  */
 @FunctionalInterface
 public interface ImgWriter {
-    void writeToBuffer(BufferedImage img,List<Stripe> stripe);
+    void writeToBuffer(Image img,List<Stripe> stripe);
 }

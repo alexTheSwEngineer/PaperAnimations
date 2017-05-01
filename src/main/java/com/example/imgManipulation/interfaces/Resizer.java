@@ -7,5 +7,5 @@ import java.awt.image.BufferedImage;
  * Created by atrposki on 30-Apr-17.
  */
 public interface Resizer {
-    BufferedImage scaleToFit(BufferedImage img, Dimension size);
+    Image scaleToFit(Image img, Dimension size);
 }
